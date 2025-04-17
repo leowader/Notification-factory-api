@@ -2,13 +2,26 @@ package com.factroy.notification.domain;
 
 
 import com.factroy.notification.config.TwilioConfig;
+import com.factroy.notification.domain.builder.WhatsappBuilder;
 import com.factroy.notification.dtos.DtoPaymentResponse;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.util.ArrayList;
+@Getter
+@Setter
 public class WhatsappNotification implements INotification {
 
+    private String phoneNumber;
+    private String message;
+    private String mediaUrl;
+    private String caption;
+    private String language;
+    private ArrayList<String> interactiveButtons;
+    private WhatsappBuilder whatsappBuilder;
 
     @Override
     public String sendNotification(DtoPaymentResponse data) {

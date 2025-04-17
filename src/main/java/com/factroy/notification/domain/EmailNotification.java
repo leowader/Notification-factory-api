@@ -1,13 +1,26 @@
 package com.factroy.notification.domain;
 
 import com.factroy.notification.config.TwilioConfig;
+import com.factroy.notification.domain.builder.EmailBuilder;
 import com.factroy.notification.dtos.DtoPaymentResponse;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
+
+import java.util.ArrayList;
 import java.util.Properties;
-
+@Getter
+@Setter
 public class EmailNotification implements INotification {
-
+    private String to;
+    private String subject;
+    private String body;
+    private ArrayList<String> cc;
+    private PriorityEmail priority;
+    private ArrayList<String> bcc;
+    private ArrayList<String> attachments;
+    private EmailBuilder emailBuilder;
     static TwilioConfig twilioConfig = new TwilioConfig();
 
     @Override

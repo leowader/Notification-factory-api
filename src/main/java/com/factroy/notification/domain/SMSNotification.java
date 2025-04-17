@@ -21,6 +21,7 @@ public class SMSNotification implements INotification{
     private  String senderId;
     private  boolean deliveryReportRequired;
     private LocalDate scheduleTime;
+    private SMSBuilder smsBuilder;
     @Override
     public String sendNotification(DtoPaymentResponse data) {
         TwilioConfig twilioConfig= new TwilioConfig();
@@ -49,5 +50,5 @@ public class SMSNotification implements INotification{
 
 
     }
-    private SMSBuilder smsBuilder;
+
 }

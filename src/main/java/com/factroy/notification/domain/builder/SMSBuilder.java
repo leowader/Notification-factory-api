@@ -4,7 +4,7 @@ import com.factroy.notification.domain.SMSNotification;
 
 import java.time.LocalDate;
 
-public abstract class SMSBuilder implements IBuilder<SMSNotification> {
+public  class SMSBuilder implements IBuilder<SMSNotification> {
 
     private final SMSNotification smsNotification = new SMSNotification();
 
