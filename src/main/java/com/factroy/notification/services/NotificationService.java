@@ -1,8 +1,6 @@
 package com.factroy.notification.services;
 
 import com.factroy.notification.config.ConfigFactoryNotification;
-import com.factroy.notification.domain.INotification;
-import com.factroy.notification.domain.builder.IBuilder;
 import com.factroy.notification.domain.factory.NotificationFactory;
 import com.factroy.notification.dtos.NotificationRequest;
 import lombok.AllArgsConstructor;

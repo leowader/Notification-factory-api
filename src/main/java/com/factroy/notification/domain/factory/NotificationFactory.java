@@ -7,6 +7,7 @@ import com.factroy.notification.dtos.NotificationRequest;
 public abstract class NotificationFactory {
 
     public INotification getNotification(NotificationRequest data){
+
         return createNotification(data);
     }
 
