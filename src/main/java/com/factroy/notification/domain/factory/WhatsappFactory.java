@@ -9,8 +9,8 @@ public class WhatsappFactory extends NotificationFactory {
 
     public INotification createNotification(NotificationRequest data) {
         return new WhatsappBuilder()
-                .phoneNumber(data.getSmsNotification().getPhoneNumber())
-                .message(data.getSmsNotification().getMessage())
+                .phoneNumber(data.getWhatsappNotification().getPhoneNumber())
+                .message(data.getWhatsappNotification().getMessage())
                 .mediaUrl(data.getWhatsappNotification().getMediaUrl())
                 .caption(data.getWhatsappNotification().getCaption())
                 .language(data.getWhatsappNotification().getLanguage())

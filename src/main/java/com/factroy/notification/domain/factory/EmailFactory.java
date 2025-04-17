@@ -18,3 +18,14 @@ public class EmailFactory extends NotificationFactory {
                 .build();
     }
 }
+
+
+/*
+
+
+    private ArrayList<String> cc;
+    private PriorityEmail priority;
+    private ArrayList<String> bcc;
+    private ArrayList<String> attachments;
+    static TwilioConfig twilioConfig = new TwilioConfig();
+*/
