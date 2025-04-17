@@ -23,7 +23,6 @@ public class WhatsappNotification implements INotification {
     private String caption;
     private String language;
     private ArrayList<String> interactiveButtons;
-    private WhatsappBuilder whatsappBuilder;
 
     @Override
     public String sendNotification( ) {

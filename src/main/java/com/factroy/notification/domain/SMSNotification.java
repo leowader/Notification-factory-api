@@ -22,7 +22,6 @@ public class SMSNotification implements INotification {
     private String senderId;
     private boolean deliveryReportRequired;
     private LocalDate scheduleTime;
-    private SMSBuilder smsBuilder;
 
     @Override
     public String sendNotification( ) {
