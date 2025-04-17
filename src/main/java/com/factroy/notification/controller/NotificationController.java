@@ -2,6 +2,7 @@ package com.factroy.notification.controller;
 
 
 import com.factroy.notification.dtos.DtoPaymentResponse;
+import com.factroy.notification.dtos.NotificationRequest;
 import com.factroy.notification.services.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ public class NotificationController {
     private NotificationService notificationService;
 
     @PostMapping("/{notificationType}")
-    public ResponseEntity<?> processNotification(@PathVariable String notificationType, @RequestBody DtoPaymentResponse data) {
+    public ResponseEntity<?> processNotification(@PathVariable String notificationType, @RequestBody NotificationRequest data) {
         String response= notificationService.processNotification(notificationType, data);
         return ResponseEntity.ok(response);
     }
