@@ -1,10 +1,6 @@
 package com.factroy.notification.domain;
 
 import com.factroy.notification.config.TwilioConfig;
-import com.factroy.notification.domain.builder.EmailBuilder;
-import com.factroy.notification.domain.builder.IBuilder;
-import com.factroy.notification.dtos.DtoPaymentResponse;
-import com.factroy.notification.dtos.NotificationRequest;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.mail.SimpleMailMessage;

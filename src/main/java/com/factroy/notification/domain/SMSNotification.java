@@ -1,10 +1,6 @@
 package com.factroy.notification.domain;
 
 import com.factroy.notification.config.TwilioConfig;
-import com.factroy.notification.domain.builder.IBuilder;
-import com.factroy.notification.domain.builder.SMSBuilder;
-import com.factroy.notification.dtos.DtoPaymentResponse;
-import com.factroy.notification.dtos.NotificationRequest;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
